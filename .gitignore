@@ -1,0 +1,10 @@
+*.diff
+*.err
+*.log
+*.orig
+.DS_Store
+node_modules
+npm-debug.log
+data.json
+config.yaml
+lib

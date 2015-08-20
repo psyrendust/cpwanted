@@ -1,0 +1,35 @@
+{
+  "name": "cpwanted",
+  "version": "0.0.1",
+  "description": "Manage wanted items in cp",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel ./src --stage 0 --out-dir ./lib",
+    "dev": "npm run build && npm run start",
+    "start": "node ./lib/index.js",
+    "install": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "cpwanted": "./bin/cpwanted.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/psyrendust/cpwanted.git"
+  },
+  "keywords": [
+    "couchpotato"
+  ],
+  "author": "Larry Gordon <lgordon@psyrendust.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/psyrendust/cpwanted/issues"
+  },
+  "homepage": "https://github.com/psyrendust/cpwanted#readme",
+  "dependencies": {
+    "babel": "^5.8.21",
+    "couchpotato": "patricke94/node-couchpotato#master",
+    "js-yaml": "^3.3.1",
+    "randomstring": "^1.0.7"
+  }
+}
